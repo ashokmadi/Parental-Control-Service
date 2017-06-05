@@ -1,6 +1,15 @@
 package ashok.parental.control.error;
 
-public interface ParentalControlError {
+public class ParentalControlError {
 
-	public void errorMessage(String message);
+	private String errorMessage;
+
+	public String getErrorMessage() {
+		return errorMessage;
+	}
+
+	public void setErrorMessage(String errorMessage) {
+		this.errorMessage = errorMessage;
+	}
+	
 }

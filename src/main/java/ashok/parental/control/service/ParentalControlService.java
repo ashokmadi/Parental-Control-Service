@@ -24,7 +24,7 @@ public class ParentalControlService {
 
 			return matchesCustomerControlLevel(customerParentalControlLevel, movieParentalControlLevel);
 		} catch (TitleNotFoundException | TechnicalFailureException e) {
-			error.errorMessage(e.getMessage());
+			error.setErrorMessage(e.getMessage());
 			return false;
 		}
 	}
